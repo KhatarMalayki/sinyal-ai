@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sinyal AI — analisis probabilistik pola tulisan AI dan manusia." />
+  <title>Sinyal AI — AI Text Detector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Sinyal AI beranda">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>SINYAL<span>.AI</span></span>
+    </a>
+    <nav aria-label="Navigasi utama">
+      <a href="#detector">Detector</a>
+      <a href="#cara-kerja">Cara kerja</a>
+    </nav>
+    <span class="status"><i></i> Sistem aktif</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span>01</span> Analisis teks generatif</div>
+      <h1>Kenali pola.<br><em>Bukan menebak.</em></h1>
+      <p class="hero-copy">Analisis sinyal linguistik untuk mengukur kemungkinan sebuah teks ditulis oleh AI—cepat, transparan, dan tanpa menyimpan data Anda.</p>
+      <div class="hero-meta">
+        <div><strong>6</strong><span>Sinyal dianalisis</span></div>
+        <div><strong>100%</strong><span>Berjalan di browser</span></div>
+        <div><strong>&lt;1s</strong><span>Waktu analisis</span></div>
+      </div>
+    </section>
+
+    <section class="workspace" id="detector">
+      <div class="input-panel">
+        <div class="panel-heading">
+          <div><span class="step">01</span><h2>Masukkan teks</h2></div>
+          <button class="text-button" id="sampleBtn" type="button">Gunakan contoh <span>↗</span></button>
+        </div>
+        <div class="upload-box" id="uploadBox">
+          <input id="documentInput" type="file" accept=".txt,.md,.docx,.pdf,text/plain,text/markdown,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf" hidden>
+          <button id="uploadBtn" class="upload-btn" type="button"><span>↑</span><b>Unggah dokumen</b></button>
+          <div><strong>TXT, MD, DOCX, atau PDF</strong><small>Tarik file ke sini atau pilih dari perangkat · diproses lokal</small></div>
+        </div>
+        <div id="fileStatus" class="file-status hidden" role="status"></div>
+        <div class="editor-wrap">
+          <textarea id="textInput" spellcheck="true" placeholder="Tempel, tulis, atau unggah dokumen yang ingin Anda analisis di sini..." aria-describedby="inputGuidance"></textarea>
+          <div class="editor-footer">
+            <span><b id="wordCount">0</b> kata · <b id="charCount">0</b> karakter</span>
+            <button id="clearBtn" class="clear-btn" type="button" aria-label="Hapus teks">Hapus</button>
+          </div>
+        </div>
+        <div class="minimum" id="inputGuidance"><i></i><span>Tanpa batas kata · minimal 50 kata disarankan</span></div>
+        <button id="analyzeBtn" class="analyze-btn" type="button">
+          <span>Analisis teks</span><b>→</b>
+        </button>
+      </div>
+
+      <aside class="result-panel" aria-live="polite">
+        <div class="panel-heading">
+          <div><span class="step">02</span><h2>Hasil analisis</h2></div>
+          <span class="model-tag">MODEL v1.0</span>
+        </div>
+
+        <div id="emptyState" class="empty-state">
+          <div class="scanner" aria-hidden="true"><span></span><i></i></div>
+          <h3>Menunggu teks</h3>
+          <p>Hasil dan rincian sinyal akan tampil di sini setelah analisis.</p>
+        </div>
+
+        <div id="loadingState" class="loading-state hidden">
+          <div class="loading-line"><i></i></div>
+          <p>Membaca pola linguistik...</p>
+        </div>
+
+        <div id="resultState" class="results hidden">
+          <div class="score-block">
+            <div class="score-ring" id="scoreRing">
+              <div><strong id="scoreValue">0</strong><span>%</span></div>
+            </div>
+            <div>
+              <span class="result-kicker">Kemungkinan AI</span>
+              <h3 id="verdict">Tidak terdeteksi</h3>
+              <p id="confidence">Keyakinan rendah</p>
+            </div>
+          </div>
+          <div class="meter-labels"><span>Lebih manusia</span><span>Lebih AI</span></div>
+          <div class="probability-meter"><i id="meterFill"></i><b id="meterPin"></b></div>
+
+          <div class="signals-heading"><h3>Rincian sinyal</h3><span id="signalCount">0/6 terdeteksi</span></div>
+          <div id="signalList" class="signal-list"></div>
+
+          <div class="sentence-heading">
+            <div><h3>Bagian untuk ditinjau</h3><p>Dinilai bersama kalimat sebelum dan sesudahnya.</p></div>
+            <span id="sentenceCount">0 ditandai</span>
+          </div>
+          <div class="sentence-legend"><i></i>Sinyal sedang <i></i>Sinyal tinggi</div>
+          <div id="sentenceHighlights" class="sentence-highlights"></div>
+
+          <div class="notice">
+            <span>!</span>
+            <p><strong>Gunakan sebagai indikator.</strong> Sorotan menunjukkan pola yang perlu ditinjau, bukan bukti bahwa suatu kalimat dibuat AI. Hasil tidak boleh menjadi satu-satunya dasar keputusan akademik atau profesional.</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="humanizer" id="humanizer">
+      <div class="humanizer-head">
+        <div><span class="eyebrow"><b>03</b> Editor revisi</span><h2>Rapikan agar lebih alami,<br>bukan untuk mengakali detector.</h2></div>
+        <p>Editor lokal ini memecah kalimat yang terlalu panjang, mengurangi transisi kaku, dan memberi variasi ritme. Periksa kembali fakta dan makna sebelum memakai hasilnya.</p>
+      </div>
+      <div class="humanizer-controls">
+        <label>Gaya
+          <select id="humanizerStyle"><option value="natural">Natural</option><option value="concise">Ringkas</option><option value="formal">Formal ringan</option></select>
+        </label>
+        <label>Intensitas
+          <input id="humanizerIntensity" type="range" min="1" max="3" value="2"><span id="intensityLabel">Sedang</span>
+        </label>
+        <label class="context-field">Konteks tulisan (opsional)
+          <input id="humanizerContext" type="text" maxlength="2000" placeholder="Contoh: laporan internal untuk pembaca nonteknis">
+        </label>
+        <button id="humanizeBtn" type="button">Revisi dengan LLM <b>↗</b></button>
+      </div>
+      <div id="humanizerStatus" class="humanizer-status" role="status">Memeriksa koneksi editor LLM...</div>
+      <div class="revision-grid">
+        <div><div class="revision-title"><h3>Pratinjau revisi</h3><span id="revisionStats">Belum dibuat</span></div><textarea id="humanizedOutput" readonly placeholder="Hasil revisi akan tampil di sini..."></textarea></div>
+        <div class="revision-actions">
+          <div><strong>Tetap dalam kendali Anda</strong><p>Hasil tidak otomatis mengganti teks. Bandingkan, koreksi, lalu pilih salin atau terapkan.</p></div>
+          <button id="copyRevisionBtn" type="button" disabled>Salin hasil</button>
+          <button id="applyRevisionBtn" type="button" disabled>Terapkan ke detector</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="cara-kerja">
+      <div><span class="eyebrow"><b>02</b> Metodologi</span><h2>Yang kami baca<br>dari sebuah tulisan.</h2></div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Variasi kalimat</h3><p>Mengukur keragaman panjang dan struktur kalimat.</p></article>
+        <article><span>02</span><h3>Repetisi pola</h3><p>Mencari frasa dan pembuka kalimat yang berulang.</p></article>
+        <article><span>03</span><h3>Keragaman kata</h3><p>Membandingkan jumlah kata unik dengan total kata.</p></article>
+        <article><span>04</span><h3>Ritme & struktur</h3><p>Menilai keseragaman paragraf dan tanda baca.</p></article>
+        <article><span>05</span><h3>Gaya ekspositoris</h3><p>Membandingkan pola impersonal dengan detail pengalaman personal.</p></article>
+        <article><span>06</span><h3>Konsistensi klausa</h3><p>Mengukur keteraturan klausa dan kepadatan kata fungsi.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#"><span class="brand-mark"><i></i><i></i><i></i></span><span>SINYAL<span>.AI</span></span></a>
+    <p>Analisis lokal. Teks Anda tidak dikirim atau disimpan.</p>
+    <span>© 2026</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/mammoth@1.8.0/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs" type="module"></script>
+  <script src="app.js?v=4.0"></script>
+</body>
+</html>

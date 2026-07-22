@@ -1,0 +1,8 @@
+{
+  "tool": "zerogpt",
+  "rows": 24,
+  "covered": 0,
+  "coverage": 0.0,
+  "metrics_on_covered": {},
+  "method": "public web endpoint observed from anonymous ZeroGPT UI; one request per frozen document"
+}

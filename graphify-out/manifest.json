@@ -1,0 +1,152 @@
+{
+  "app.js": {
+    "mtime": 1784601375.9628963,
+    "ast_hash": "55f531114b11a71a1817226d92007b1a",
+    "semantic_hash": ""
+  },
+  "benchmark.py": {
+    "mtime": 1784517330.1693988,
+    "ast_hash": "126d499811a7c00e393cc3f0f64d3813",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/external-comparison-manifest.json": {
+    "mtime": 1784532972.9904976,
+    "ast_hash": "b72fd871deb00bf50cf1f2d75b2bbfd5",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/external-comparison-report.json": {
+    "mtime": 1784537300.4060836,
+    "ast_hash": "9fa50290502c87c823201d834e560946",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/external-comparison-zerogpt-browser.json": {
+    "mtime": 1784541082.895794,
+    "ast_hash": "4cc2c00d825fcad1d7c41adc248f82a7",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/external-comparison-zerogpt-report.json": {
+    "mtime": 1784540854.051526,
+    "ast_hash": "660f848bf58d1a598cbc13713eebd7b6",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/feature-v2-calibration-cv.json": {
+    "mtime": 1784515694.8924031,
+    "ast_hash": "7324841b2eca68cb9f7f1cdc97ca1bd0",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/feature-v2-frozen.json": {
+    "mtime": 1784515694.8929296,
+    "ast_hash": "51ee7e2228e744e60bc1dd0be9a1f3ec",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/feature-v2-holdout.json": {
+    "mtime": 1784516034.9504147,
+    "ast_hash": "829fea61622648f06c4bf4b1c5e62d5c",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/formula-calibration.json": {
+    "mtime": 1784460438.9723647,
+    "ast_hash": "978f38a433c2ea94a17c2772c9e416c8",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/formula-frozen.json": {
+    "mtime": 1784460438.9723647,
+    "ast_hash": "0e6dfc43d6f403a3200b8af32ae97bfe",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/formula-holdout.json": {
+    "mtime": 1784460455.9757962,
+    "ast_hash": "dd8240f57f60a92e0835a1c01a3b1f48",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/formula-v2-calibration.json": {
+    "mtime": 1784465172.6302693,
+    "ast_hash": "efd08a35984ee593e453b83dd9f2e99d",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/formula-v2-frozen.json": {
+    "mtime": 1784465172.6302693,
+    "ast_hash": "4a8dff2b2157297e444d50c319bebd95",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/report.json": {
+    "mtime": 1784460288.3152518,
+    "ast_hash": "28ce2d0c6236450205f3f2d25ff85e7e",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/v2-split-manifest.json": {
+    "mtime": 1784460977.8057868,
+    "ast_hash": "9fc0f2937524d0c8fb4f1c9de4eab76f",
+    "semantic_hash": ""
+  },
+  "benchmark/report.json": {
+    "mtime": 1784519990.3264563,
+    "ast_hash": "9f278c9138580dd3dec2e3e07024f8da",
+    "semantic_hash": ""
+  },
+  "benchmark_expanded.py": {
+    "mtime": 1784458927.9879014,
+    "ast_hash": "ad463faf77658697fb7d940821e48f23",
+    "semantic_hash": ""
+  },
+  "benchmark_zerogpt.py": {
+    "mtime": 1784540782.8884144,
+    "ast_hash": "e9492dc319a7cc6cffbdac82ee74403e",
+    "semantic_hash": ""
+  },
+  "build_v2_dataset.py": {
+    "mtime": 1784460853.3636265,
+    "ast_hash": "ecaa21d0e620852e00ef07e10108c7a0",
+    "semantic_hash": ""
+  },
+  "calibrate_features_v2.py": {
+    "mtime": 1784515673.5357134,
+    "ast_hash": "5ed1f633568da78516aa90b618a01079",
+    "semantic_hash": ""
+  },
+  "calibrate_formula.py": {
+    "mtime": 1784460417.9144142,
+    "ast_hash": "aef196999d000a70f3dd27c6fcc5d46b",
+    "semantic_hash": ""
+  },
+  "calibrate_formula_v2.py": {
+    "mtime": 1784465157.1593,
+    "ast_hash": "05e701bbbd06e95b2716002a4ef8e444",
+    "semantic_hash": ""
+  },
+  "evaluate_features_v2_holdout.py": {
+    "mtime": 1784516019.7165558,
+    "ast_hash": "8a4db7390c6efbd6209da73f60833fc8",
+    "semantic_hash": ""
+  },
+  "external_compare.py": {
+    "mtime": 1784533932.0414133,
+    "ast_hash": "efaa7d56f769445cf89c7b1d65b450c0",
+    "semantic_hash": ""
+  },
+  "generate_real_ai.py": {
+    "mtime": 1784464242.4743538,
+    "ast_hash": "5887be9a49ca29087a97d4755fbf13cd",
+    "semantic_hash": ""
+  },
+  "generate_v2_ai.py": {
+    "mtime": 1784460765.7773974,
+    "ast_hash": "b0f6180b5a0221f3157ad43ebe740259",
+    "semantic_hash": ""
+  },
+  "benchmark/README.md": {
+    "mtime": 1784424862.4955122,
+    "ast_hash": "d258b8c5c578030551f7769743af535f",
+    "semantic_hash": ""
+  },
+  "benchmark/expanded/README.md": {
+    "mtime": 1784601376.5617995,
+    "ast_hash": "56c6f21d7f46bc429c776e6b80c1236d",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1784601214.4342306,
+    "ast_hash": "de100c49d43aac55fe5baf54b1eaeab9",
+    "semantic_hash": ""
+  }
+}

@@ -1,0 +1,49 @@
+﻿id,label,topic,genre,corpus,requested_model,model,generator,fallback,split,score,source
+human-001,human,Elvis Presley,ensiklopedis,wikipedia,,,human-public-corpus,false,calibration,5,https://id.wikipedia.org/wiki/Elvis_Presley
+human-002,human,"Tirtoadi, Mlati, Sleman",ensiklopedis,wikipedia,,,human-public-corpus,false,test,88,"https://id.wikipedia.org/wiki/Tirtoadi,_Mlati,_Sleman"
+human-003,human,Orkestra gulintangan,ensiklopedis,wikipedia,,,human-public-corpus,false,calibration,96,https://id.wikipedia.org/wiki/Orkestra_gulintangan
+human-004,human,Guandimiao,ensiklopedis,wikipedia,,,human-public-corpus,false,calibration,11,https://id.wikipedia.org/wiki/Guandimiao
+human-005,human,Wedhung,ensiklopedis,wikipedia,,,human-public-corpus,false,calibration,79,https://id.wikipedia.org/wiki/Wedhung
+human-006,human,Mohd Salleh bin Abdul Karim,ensiklopedis,wikipedia,,,human-public-corpus,false,test,95,https://id.wikipedia.org/wiki/Mohd_Salleh_bin_Abdul_Karim
+human-007,human,Pendidikan kesehatan,ensiklopedis,wikipedia,,,human-public-corpus,false,calibration,80,https://id.wikipedia.org/wiki/Pendidikan_kesehatan
+human-008,human,Masalah budi–tubuh,ensiklopedis,wikipedia,,,human-public-corpus,false,calibration,39,https://id.wikipedia.org/wiki/Masalah_budi%E2%80%93tubuh
+human-009,human,Radio Dangdut,instruksional,wikibooks,,,human-public-corpus,false,calibration,94,https://id.wikibooks.org/wiki/Radio_Dangdut
+human-010,human,Bahasa Indonesia/Diftong,instruksional,wikibooks,,,human-public-corpus,false,test,96,https://id.wikibooks.org/wiki/Bahasa_Indonesia/Diftong
+human-011,human,Pembenahan Transportasi Jakarta/Rencana Kegiatan/Masalah Perencanaan,instruksional,wikibooks,,,human-public-corpus,false,calibration,96,https://id.wikibooks.org/wiki/Pembenahan_Transportasi_Jakarta/Rencana_Kegiatan/Masalah_Perencanaan
+human-012,human,Senja: Permainan dari Masa Kecil/Ma'jengkal,instruksional,wikibooks,,,human-public-corpus,false,calibration,29,https://id.wikibooks.org/wiki/Senja:_Permainan_dari_Masa_Kecil/Ma%27jengkal
+human-013,human,Mitologi Yunani/Titan/Okeanos,instruksional,wikibooks,,,human-public-corpus,false,test,56,https://id.wikibooks.org/wiki/Mitologi_Yunani/Titan/Okeanos
+human-014,human,Mitologi Yunani/Makhluk Mitologi/Lamia,instruksional,wikibooks,,,human-public-corpus,false,calibration,21,https://id.wikibooks.org/wiki/Mitologi_Yunani/Makhluk_Mitologi/Lamia
+human-015,human,Romawi Kuno/Sejarah/Keruntuhan Romawi,instruksional,wikibooks,,,human-public-corpus,false,calibration,31,https://id.wikibooks.org/wiki/Romawi_Kuno/Sejarah/Keruntuhan_Romawi
+human-016,human,Yunani Kuno/Arsitektur/Parthenon,instruksional,wikibooks,,,human-public-corpus,false,calibration,45,https://id.wikibooks.org/wiki/Yunani_Kuno/Arsitektur/Parthenon
+human-017,human,"Pidato Kenegaraan Presiden Republik Indonesia, 16 Agustus 2005",dokumen_sastra,wikisource,,,human-public-corpus,false,test,96,"https://id.wikisource.org/wiki/Pidato_Kenegaraan_Presiden_Republik_Indonesia,_16_Agustus_2005"
+human-018,human,"Pidato pelantikan Susilo Bambang Yudhoyono, 20 Oktober 2004",dokumen_sastra,wikisource,,,human-public-corpus,false,test,96,"https://id.wikisource.org/wiki/Pidato_pelantikan_Susilo_Bambang_Yudhoyono,_20_Oktober_2004"
+human-019,human,Mengelilingi Doenia Dalam 80 Hari/Bab XVI,dokumen_sastra,wikisource,,,human-public-corpus,false,calibration,16,https://id.wikisource.org/wiki/Mengelilingi_Doenia_Dalam_80_Hari/Bab_XVI
+human-020,human,Ketentuan Wewenang untuk Menahan dan Menyita Surat-surat dan Tulisan-tulisan Lainnya di Kantor-kantor Pos di Indonesia,dokumen_sastra,wikisource,,,human-public-corpus,false,test,87,https://id.wikisource.org/wiki/Ketentuan_Wewenang_untuk_Menahan_dan_Menyita_Surat-surat_dan_Tulisan-tulisan_Lainnya_di_Kantor-kantor_Pos_di_Indonesia
+human-021,human,Undang-Undang Darurat Republik Indonesia Nomor 19 Tahun 1955,dokumen_sastra,wikisource,,,human-public-corpus,false,test,57,https://id.wikisource.org/wiki/Undang-Undang_Darurat_Republik_Indonesia_Nomor_19_Tahun_1955
+human-022,human,Kitab Suci Zabur dan Injil/2 Yohanes,dokumen_sastra,wikisource,,,human-public-corpus,false,test,13,https://id.wikisource.org/wiki/Kitab_Suci_Zabur_dan_Injil/2_Yohanes
+human-023,human,Al-Qur'an/Ar-Ra'd,dokumen_sastra,wikisource,,,human-public-corpus,false,test,78,https://id.wikisource.org/wiki/Al-Qur%27an/Ar-Ra%27d
+human-024,human,Keputusan Menteri Pemuda dan Olahraga Republik Indonesia Nomor 14 Tahun 2016,dokumen_sastra,wikisource,,,human-public-corpus,false,calibration,89,https://id.wikisource.org/wiki/Keputusan_Menteri_Pemuda_dan_Olahraga_Republik_Indonesia_Nomor_14_Tahun_2016
+ai-025,ai,Elvis Presley,ensiklopedis,wikipedia,kimchi/minimax-m3,minimax-m3,OpenAI-compatible local API,false,calibration,4,http://localhost:20128/v1/chat/completions
+ai-026,ai,Guandimiao,ensiklopedis,wikipedia,ollama/minimax-m3,minimax-m3,OpenAI-compatible local API,false,calibration,96,http://localhost:20128/v1/chat/completions
+ai-027,ai,Masalah budi–tubuh,ensiklopedis,wikipedia,kimchi/kimi-k2.7,kimi-k2.7,OpenAI-compatible local API,false,calibration,48,http://localhost:20128/v1/chat/completions
+ai-028,ai,Mohd Salleh bin Abdul Karim,ensiklopedis,wikipedia,gemini/gemini-3.5-flash,gemini-3.5-flash,OpenAI-compatible local API,false,test,11,http://localhost:20128/v1/chat/completions
+ai-029,ai,Orkestra gulintangan,ensiklopedis,wikipedia,gemini/gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,OpenAI-compatible local API,false,calibration,21,http://localhost:20128/v1/chat/completions
+ai-030,ai,Pendidikan kesehatan,ensiklopedis,wikipedia,gemini/gemini-3-flash-preview,gemini-3-flash-preview,OpenAI-compatible local API,false,calibration,88,http://localhost:20128/v1/chat/completions
+ai-031,ai,"Tirtoadi, Mlati, Sleman",ensiklopedis,wikipedia,ag/gemini-3.5-flash-low,gemini-default,OpenAI-compatible local API,false,test,11,http://localhost:20128/v1/chat/completions
+ai-032,ai,Wedhung,ensiklopedis,wikipedia,ag/gemini-3.1-pro-low,gemini-3.1-pro-low,OpenAI-compatible local API,false,calibration,17,http://localhost:20128/v1/chat/completions
+ai-033,ai,Bahasa Indonesia/Diftong,instruksional,wikibooks,kimchi/minimax-m3,minimax-m3,OpenAI-compatible local API,false,test,96,http://localhost:20128/v1/chat/completions
+ai-034,ai,Mitologi Yunani/Makhluk Mitologi/Lamia,instruksional,wikibooks,ollama/minimax-m3,minimax-m3,OpenAI-compatible local API,false,calibration,8,http://localhost:20128/v1/chat/completions
+ai-035,ai,Mitologi Yunani/Titan/Okeanos,instruksional,wikibooks,kimchi/kimi-k2.7,kimi-k2.7,OpenAI-compatible local API,false,test,21,http://localhost:20128/v1/chat/completions
+ai-036,ai,Pembenahan Transportasi Jakarta/Rencana Kegiatan/Masalah Perencanaan,instruksional,wikibooks,gemini/gemini-3.5-flash,gemini-3.5-flash,OpenAI-compatible local API,false,calibration,13,http://localhost:20128/v1/chat/completions
+ai-037,ai,Radio Dangdut,instruksional,wikibooks,gemini/gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,OpenAI-compatible local API,false,calibration,11,http://localhost:20128/v1/chat/completions
+ai-038,ai,Romawi Kuno/Sejarah/Keruntuhan Romawi,instruksional,wikibooks,gemini/gemini-3-flash-preview,gemini-3-flash-preview,OpenAI-compatible local API,false,calibration,4,http://localhost:20128/v1/chat/completions
+ai-039,ai,Senja: Permainan dari Masa Kecil/Ma'jengkal,instruksional,wikibooks,ag/gemini-3.5-flash-low,gemini-default,OpenAI-compatible local API,false,calibration,17,http://localhost:20128/v1/chat/completions
+ai-040,ai,Yunani Kuno/Arsitektur/Parthenon,instruksional,wikibooks,ag/gemini-3.1-pro-low,gemini-3.1-pro-low,OpenAI-compatible local API,false,calibration,4,http://localhost:20128/v1/chat/completions
+ai-041,ai,Al-Qur'an/Ar-Ra'd,dokumen_sastra,wikisource,kimchi/minimax-m3,minimax-m3,OpenAI-compatible local API,false,test,9,http://localhost:20128/v1/chat/completions
+ai-042,ai,Keputusan Menteri Pemuda dan Olahraga Republik Indonesia Nomor 14 Tahun 2016,dokumen_sastra,wikisource,ollama/minimax-m3,minimax-m3,OpenAI-compatible local API,false,calibration,5,http://localhost:20128/v1/chat/completions
+ai-043,ai,Ketentuan Wewenang untuk Menahan dan Menyita Surat-surat dan Tulisan-tulisan Lainnya di Kantor-kantor Pos di Indonesia,dokumen_sastra,wikisource,kimchi/kimi-k2.7,kimi-k2.7,OpenAI-compatible local API,false,test,10,http://localhost:20128/v1/chat/completions
+ai-044,ai,Kitab Suci Zabur dan Injil/2 Yohanes,dokumen_sastra,wikisource,gemini/gemini-3.5-flash,gemini-3.5-flash,OpenAI-compatible local API,false,test,24,http://localhost:20128/v1/chat/completions
+ai-045,ai,Mengelilingi Doenia Dalam 80 Hari/Bab XVI,dokumen_sastra,wikisource,gemini/gemini-3.1-flash-lite-preview,gemini-3.1-flash-lite,OpenAI-compatible local API,false,calibration,4,http://localhost:20128/v1/chat/completions
+ai-046,ai,"Pidato Kenegaraan Presiden Republik Indonesia, 16 Agustus 2005",dokumen_sastra,wikisource,gemini/gemini-3-flash-preview,gemini-3-flash-preview,OpenAI-compatible local API,false,test,19,http://localhost:20128/v1/chat/completions
+ai-047,ai,"Pidato pelantikan Susilo Bambang Yudhoyono, 20 Oktober 2004",dokumen_sastra,wikisource,ag/gemini-3.5-flash-low,gemini-default,OpenAI-compatible local API,false,test,5,http://localhost:20128/v1/chat/completions
+ai-048,ai,Undang-Undang Darurat Republik Indonesia Nomor 19 Tahun 1955,dokumen_sastra,wikisource,ag/gemini-3.1-pro-low,gemini-3.1-pro-low,OpenAI-compatible local API,false,test,4,http://localhost:20128/v1/chat/completions

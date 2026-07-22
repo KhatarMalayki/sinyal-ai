@@ -1,0 +1,58 @@
+{
+  "calibration_samples": 34,
+  "holdout_samples_not_scored": 14,
+  "objective_order": [
+    "mcc",
+    "balanced_accuracy",
+    "specificity",
+    "f1"
+  ],
+  "candidates": {
+    "balanced_no_expository_max": {
+      "threshold": 95,
+      "tp": 0,
+      "tn": 17,
+      "fp": 0,
+      "fn": 17,
+      "accuracy": 0.5,
+      "precision": 0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "false_positive_rate": 0.0,
+      "balanced_accuracy": 0.5,
+      "f1": 0,
+      "mcc": 0
+    },
+    "low_lexical_style": {
+      "threshold": 95,
+      "tp": 0,
+      "tn": 17,
+      "fp": 0,
+      "fn": 17,
+      "accuracy": 0.5,
+      "precision": 0,
+      "recall": 0.0,
+      "specificity": 1.0,
+      "false_positive_rate": 0.0,
+      "balanced_accuracy": 0.5,
+      "f1": 0,
+      "mcc": 0
+    },
+    "no_repetition_floor": {
+      "threshold": 13,
+      "tp": 17,
+      "tn": 1,
+      "fp": 16,
+      "fn": 0,
+      "accuracy": 0.5294117647058824,
+      "precision": 0.5151515151515151,
+      "recall": 1.0,
+      "specificity": 0.058823529411764705,
+      "false_positive_rate": 0.9411764705882353,
+      "balanced_accuracy": 0.5294117647058824,
+      "f1": 0.6799999999999999,
+      "mcc": 0.17407765595569785
+    }
+  },
+  "winner": "no_repetition_floor"
+}

@@ -1,0 +1,18 @@
+{
+  "sinyal-ai": {
+    "threshold": 50,
+    "tp": 9,
+    "tn": 11,
+    "fp": 1,
+    "fn": 3,
+    "accuracy": 0.8333333333333334,
+    "precision": 0.9,
+    "recall": 0.75,
+    "specificity": 0.9166666666666666,
+    "false_positive_rate": 0.08333333333333337,
+    "balanced_accuracy": 0.8333333333333333,
+    "f1": 0.8181818181818182,
+    "mcc": 0.6761234037828132,
+    "coverage": 1.0
+  }
+}

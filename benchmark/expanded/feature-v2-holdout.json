@@ -1,0 +1,86 @@
+{
+  "candidate": "rhythm_and_closure",
+  "threshold": 0.5435406480407824,
+  "holdout_topics": 25,
+  "holdout_rows": 50,
+  "promotion_gates": {
+    "mcc": 0.3,
+    "balanced_accuracy": 0.7,
+    "specificity": 0.65,
+    "recall": 0.7,
+    "minimum_genre_balanced_accuracy": 0.6
+  },
+  "overall_metrics": {
+    "threshold": 50,
+    "tp": 22,
+    "tn": 18,
+    "fp": 7,
+    "fn": 3,
+    "accuracy": 0.8,
+    "precision": 0.7586206896551724,
+    "recall": 0.88,
+    "specificity": 0.72,
+    "false_positive_rate": 0.28,
+    "balanced_accuracy": 0.8,
+    "f1": 0.8148148148148148,
+    "mcc": 0.6078306738548308
+  },
+  "by_genre": {
+    "dokumen_sastra": {
+      "threshold": 50,
+      "tp": 6,
+      "tn": 6,
+      "fp": 0,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "false_positive_rate": 0.0,
+      "balanced_accuracy": 1.0,
+      "f1": 1.0,
+      "mcc": 1.0
+    },
+    "ensiklopedis": {
+      "threshold": 50,
+      "tp": 10,
+      "tn": 6,
+      "fp": 5,
+      "fn": 1,
+      "accuracy": 0.7272727272727273,
+      "precision": 0.6666666666666666,
+      "recall": 0.9090909090909091,
+      "specificity": 0.5454545454545454,
+      "false_positive_rate": 0.4545454545454546,
+      "balanced_accuracy": 0.7272727272727273,
+      "f1": 0.7692307692307692,
+      "mcc": 0.48795003647426655
+    },
+    "instruksional": {
+      "threshold": 50,
+      "tp": 6,
+      "tn": 6,
+      "fp": 2,
+      "fn": 2,
+      "accuracy": 0.75,
+      "precision": 0.75,
+      "recall": 0.75,
+      "specificity": 0.75,
+      "false_positive_rate": 0.25,
+      "balanced_accuracy": 0.75,
+      "f1": 0.75,
+      "mcc": 0.5
+    }
+  },
+  "minimum_genre_balanced_accuracy": 0.7272727272727273,
+  "gate_checks": {
+    "mcc": true,
+    "balanced_accuracy": true,
+    "specificity": true,
+    "recall": true,
+    "minimum_genre_balanced_accuracy": true
+  },
+  "promotion_pass": true,
+  "one_shot": true,
+  "retuning_permitted": false
+}

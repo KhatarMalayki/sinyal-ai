@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "created_before_ai_generation": true,
+  "purpose": "exploratory external detector comparison; no tuning permitted",
+  "pairs": 12,
+  "genres": 3,
+  "models": [
+    "kimchi/minimax-m3",
+    "ollama/minimax-m3",
+    "kimchi/kimi-k2.7",
+    "gemini/gemini-3.5-flash"
+  ],
+  "decision_rule": "AI when score/probability >= 50; categorical AI=100, human=0",
+  "metrics": [
+    "mcc",
+    "balanced_accuracy",
+    "specificity",
+    "recall",
+    "coverage"
+  ],
+  "human_sha256": "a80f70c0033b08818214517c150b8ca2e30c953617f8d8102dd8129f8a10e992",
+  "created_at": "2026-07-20T07:36:12.990497+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "tool": "zerogpt",
+  "method": "anonymous browser-session fetch to https://api.zerogpt.com/api/detect/detectText; one request per frozen document",
+  "decision_threshold": 50,
+  "coverage": 1.0,
+  "scores_in_dataset_order": [95.5, 98.3, 41.7, 0, 72.2, 100, 100, 100, 13.3, 0, 100, 63.3, 0, 45.1, 0, 0, 100, 100, 11.9, 100, 0, 70.6, 0, 0],
+  "metrics": {
+    "tp": 4,
+    "tn": 4,
+    "fp": 8,
+    "fn": 8,
+    "accuracy": 0.3333333333333333,
+    "precision": 0.3333333333333333,
+    "recall": 0.3333333333333333,
+    "specificity": 0.3333333333333333,
+    "false_positive_rate": 0.6666666666666667,
+    "balanced_accuracy": 0.3333333333333333,
+    "f1": 0.3333333333333333,
+    "mcc": -0.3333333333333333
+  },
+  "notes": [
+    "All 24 responses reported HTTP 200 and detected_language=id except external-human-11, reported ca.",
+    "Direct non-browser requests returned application-level 403; the anonymous browser session succeeded.",
+    "ZeroGPT classified many frozen human public-corpus texts as AI and missed many generated narrative/instructional texts."
+  ]
+}

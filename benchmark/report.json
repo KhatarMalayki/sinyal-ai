@@ -1,0 +1,70 @@
+{
+  "dataset_size": 50,
+  "human_samples": 25,
+  "ai_samples": 25,
+  "seed": 20260719,
+  "ui_threshold": {
+    "threshold": 50,
+    "tp": 25,
+    "tn": 25,
+    "fp": 0,
+    "fn": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "false_positive_rate": 0.0,
+    "balanced_accuracy": 1.0,
+    "f1": 1.0,
+    "mcc": 1.0
+  },
+  "split": {
+    "method": "paired topic split",
+    "calibration_topics": 15,
+    "test_topics": 10,
+    "calibration_samples": 30,
+    "test_samples": 20
+  },
+  "calibration_best": {
+    "threshold": 15,
+    "tp": 15,
+    "tn": 15,
+    "fp": 0,
+    "fn": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "false_positive_rate": 0.0,
+    "balanced_accuracy": 1.0,
+    "f1": 1.0,
+    "mcc": 1.0
+  },
+  "held_out_test": {
+    "threshold": 15,
+    "tp": 10,
+    "tn": 7,
+    "fp": 3,
+    "fn": 0,
+    "accuracy": 0.85,
+    "precision": 0.7692307692307693,
+    "recall": 1.0,
+    "specificity": 0.7,
+    "false_positive_rate": 0.30000000000000004,
+    "balanced_accuracy": 0.85,
+    "f1": 0.8695652173913044,
+    "mcc": 0.7337993857053428
+  },
+  "score_summary": {
+    "human": {
+      "min": 8,
+      "mean": 11,
+      "max": 15
+    },
+    "ai": {
+      "min": 90,
+      "mean": 91.76,
+      "max": 93
+    }
+  }
+}

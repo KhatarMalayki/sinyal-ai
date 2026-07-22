@@ -1,0 +1,44 @@
+{
+  "candidate": "rhythm_and_closure",
+  "config": {
+    "sentence_uniformity": 0.26,
+    "paragraph_uniformity": 0.1,
+    "sentence_closure": 0.18,
+    "comma_uniformity": 0.12,
+    "function_stability": 0.15,
+    "lexical_stability": 0.09,
+    "digit_density": -0.05,
+    "quote_density": -0.05
+  },
+  "threshold": 0.5435406480407824,
+  "oof_metrics": {
+    "threshold": 50,
+    "tp": 60,
+    "tn": 51,
+    "fp": 20,
+    "fn": 11,
+    "accuracy": 0.7816901408450704,
+    "precision": 0.75,
+    "recall": 0.8450704225352113,
+    "specificity": 0.7183098591549296,
+    "false_positive_rate": 0.2816901408450704,
+    "balanced_accuracy": 0.7816901408450705,
+    "f1": 0.794701986754967,
+    "mcc": 0.5679618342470648
+  },
+  "calibration_pass": true,
+  "gates": {
+    "mcc": 0.2,
+    "balanced_accuracy": 0.6,
+    "specificity": 0.65
+  },
+  "objective_order": [
+    "mcc",
+    "balanced_accuracy",
+    "specificity",
+    "f1"
+  ],
+  "cv_folds": 5,
+  "cv_salt": "sinyal-ai-v2-calibration-paired-cv-v1",
+  "outer_holdout_scored": false
+}

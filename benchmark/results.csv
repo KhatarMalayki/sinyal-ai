@@ -1,0 +1,51 @@
+﻿id,label,topic,split,score,source
+human-01,human,RPTRA Sunter Jaya,calibration,10,https://id.wikipedia.org/wiki/RPTRA_Sunter_Jaya
+human-02,human,Christie Damayanti,calibration,12,https://id.wikipedia.org/wiki/Christie_Damayanti
+human-03,human,DjVu,test,15,https://id.wikipedia.org/wiki/DjVu
+human-04,human,Fufufafa,calibration,14,https://id.wikipedia.org/wiki/Fufufafa
+human-05,human,Kota Kinabalu,test,8,https://id.wikipedia.org/wiki/Kota_Kinabalu
+human-06,human,"Sebuah Nama, Sebuah Cerita",calibration,11,"https://id.wikipedia.org/wiki/Sebuah_Nama,_Sebuah_Cerita"
+human-07,human,Kosakata dari bahasa Portugis dalam bahasa Jepang,test,10,https://id.wikipedia.org/wiki/Kosakata_dari_bahasa_Portugis_dalam_bahasa_Jepang
+human-08,human,Ocean Heaven,calibration,8,https://id.wikipedia.org/wiki/Ocean_Heaven
+human-09,human,Butir-Butir Pasir di Laut,calibration,9,https://id.wikipedia.org/wiki/Butir-Butir_Pasir_di_Laut
+human-10,human,Howard Wilkinson,calibration,9,https://id.wikipedia.org/wiki/Howard_Wilkinson
+human-11,human,Giovanni Domenico Cassini,calibration,8,https://id.wikipedia.org/wiki/Giovanni_Domenico_Cassini
+human-12,human,Brian Cowen,calibration,8,https://id.wikipedia.org/wiki/Brian_Cowen
+human-13,human,Paulo Dybala,calibration,8,https://id.wikipedia.org/wiki/Paulo_Dybala
+human-14,human,Pengukur Ketebalan,calibration,14,https://id.wikipedia.org/wiki/Pengukur_Ketebalan
+human-15,human,Kapal induk kelas Yorktown,test,13,https://id.wikipedia.org/wiki/Kapal_induk_kelas_Yorktown
+human-16,human,Kepala Badan Kependudukan dan Keluarga Berencana Nasional,test,9,https://id.wikipedia.org/wiki/Kepala_Badan_Kependudukan_dan_Keluarga_Berencana_Nasional
+human-17,human,Mikey Day,calibration,8,https://id.wikipedia.org/wiki/Mikey_Day
+human-18,human,Lenyapnya Sebuah Permata,calibration,12,https://id.wikipedia.org/wiki/Lenyapnya_Sebuah_Permata
+human-19,human,Susuh-batu yoyo,calibration,11,https://id.wikipedia.org/wiki/Susuh-batu_yoyo
+human-20,human,Partai Anda (Britania Raya),test,11,https://id.wikipedia.org/wiki/Partai_Anda_(Britania_Raya)
+human-21,human,Filsafat akuntansi,test,15,https://id.wikipedia.org/wiki/Filsafat_akuntansi
+human-22,human,Astro Boy (film),calibration,9,https://id.wikipedia.org/wiki/Astro_Boy_(film)
+human-23,human,Mithras,test,14,https://id.wikipedia.org/wiki/Mithras
+human-24,human,Hutan Knockma,test,15,https://id.wikipedia.org/wiki/Hutan_Knockma
+human-25,human,Materi gelap dingin,test,14,https://id.wikipedia.org/wiki/Materi_gelap_dingin
+ai-01,ai,RPTRA Sunter Jaya,calibration,92,local deterministic generator
+ai-02,ai,Christie Damayanti,calibration,92,local deterministic generator
+ai-03,ai,DjVu,test,92,local deterministic generator
+ai-04,ai,Fufufafa,calibration,93,local deterministic generator
+ai-05,ai,Kota Kinabalu,test,92,local deterministic generator
+ai-06,ai,"Sebuah Nama, Sebuah Cerita",calibration,92,local deterministic generator
+ai-07,ai,Kosakata dari bahasa Portugis dalam bahasa Jepang,test,90,local deterministic generator
+ai-08,ai,Ocean Heaven,calibration,92,local deterministic generator
+ai-09,ai,Butir-Butir Pasir di Laut,calibration,91,local deterministic generator
+ai-10,ai,Howard Wilkinson,calibration,92,local deterministic generator
+ai-11,ai,Giovanni Domenico Cassini,calibration,92,local deterministic generator
+ai-12,ai,Brian Cowen,calibration,92,local deterministic generator
+ai-13,ai,Paulo Dybala,calibration,92,local deterministic generator
+ai-14,ai,Pengukur Ketebalan,calibration,92,local deterministic generator
+ai-15,ai,Kapal induk kelas Yorktown,test,91,local deterministic generator
+ai-16,ai,Kepala Badan Kependudukan dan Keluarga Berencana Nasional,test,90,local deterministic generator
+ai-17,ai,Mikey Day,calibration,92,local deterministic generator
+ai-18,ai,Lenyapnya Sebuah Permata,calibration,92,local deterministic generator
+ai-19,ai,Susuh-batu yoyo,calibration,92,local deterministic generator
+ai-20,ai,Partai Anda (Britania Raya),test,91,local deterministic generator
+ai-21,ai,Filsafat akuntansi,test,92,local deterministic generator
+ai-22,ai,Astro Boy (film),calibration,92,local deterministic generator
+ai-23,ai,Mithras,test,92,local deterministic generator
+ai-24,ai,Hutan Knockma,test,92,local deterministic generator
+ai-25,ai,Materi gelap dingin,test,92,local deterministic generator

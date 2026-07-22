@@ -1,0 +1,18 @@
+{
+  "candidate": "no_repetition_floor",
+  "config": {
+    "variation": 0.28,
+    "repetition": 0.28,
+    "vocabulary": 0.04,
+    "structure": 0.14,
+    "style": 0.04,
+    "function": 0.09,
+    "clause": 0.11,
+    "personal": -0.1,
+    "repetition_floor": 0,
+    "center": 0.36,
+    "slope": 9.0
+  },
+  "threshold": 13,
+  "split_salt": "sinyal-ai-multimodel-v1-unseen-holdout"
+}
