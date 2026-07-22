@@ -1,7 +1,7 @@
 {
   "app.js": {
-    "mtime": 1784687014.6075037,
-    "ast_hash": "1c751e81db3a61c148dd7ee33201f892",
+    "mtime": 1784601375.9628963,
+    "ast_hash": "55f531114b11a71a1817226d92007b1a",
     "semantic_hash": ""
   },
   "benchmark.py": {
@@ -145,18 +145,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1784622583.2166858,
-    "ast_hash": "ce7666a20735d50e636019469b249cf9",
-    "semantic_hash": ""
-  },
-  "server.py": {
-    "mtime": 1784687014.2792957,
-    "ast_hash": "eebd459e16a9dbafd5a173f5f88678fa",
-    "semantic_hash": ""
-  },
-  "README.md": {
-    "mtime": 1784691629.982701,
-    "ast_hash": "5899954e4c71a6b61d61183159362ac8",
+    "mtime": 1784601214.4342306,
+    "ast_hash": "de100c49d43aac55fe5baf54b1eaeab9",
     "semantic_hash": ""
   }
 }

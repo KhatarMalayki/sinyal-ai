@@ -1,18 +1,13 @@
-# Graph Report - tools ai  (2026-07-22)
+# Graph Report - tools ai  (2026-07-21)
 
 ## Corpus Check
-- 31 files · ~15,619 words
+- 29 files · ~13,944 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 193 nodes · 357 edges · 12 communities
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.5)
+- 160 nodes · 308 edges · 10 communities
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `caf44c74`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - app.js
@@ -25,8 +20,6 @@
 - external_compare.py
 - benchmark_expanded.py
 - Benchmark Indonesia Sinyal.AI
-- benchmark_zerogpt.py
-- Sinyal.AI
 
 ## God Nodes (most connected - your core abstractions)
 1. `classification_metrics()` - 20 edges
@@ -35,16 +28,16 @@
 4. `candidate_score()` - 8 edges
 5. `main()` - 8 edges
 6. `main()` - 7 edges
-7. `wordsOf()` - 6 edges
-8. `analyzeText()` - 6 edges
-9. `evaluate()` - 6 edges
-10. `main()` - 6 edges
+7. `analyzeText()` - 6 edges
+8. `evaluate()` - 6 edges
+9. `main()` - 6 edges
+10. `features()` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `evaluate_frozen()` --calls--> `score_text()`  [EXTRACTED]
+  calibrate_formula_v2.py → benchmark.py
 - `score_local()` --calls--> `score_text()`  [EXTRACTED]
   external_compare.py → benchmark.py
-- `main()` --calls--> `classification_metrics()`  [EXTRACTED]
-  benchmark_zerogpt.py → benchmark.py
 - `cross_validate()` --calls--> `classification_metrics()`  [EXTRACTED]
   calibrate_features_v2.py → benchmark.py
 - `threshold_metrics()` --calls--> `classification_metrics()`  [EXTRACTED]
@@ -55,27 +48,27 @@
 ## Import Cycles
 - None detected.
 
-## Communities (12 total, 0 thin omitted)
+## Communities (10 total, 0 thin omitted)
 
 ### Community 0 - "app.js"
-Cohesion: 0.08
-Nodes (40): analyzeBtn, analyzeSentenceContexts(), analyzeText(), applyRevisionBtn, charCount, checkHumanizerHealth(), clamp(), clearBtn (+32 more)
+Cohesion: 0.11
+Nodes (26): analyzeBtn, analyzeSentenceContexts(), analyzeText(), applyRevisionBtn, charCount, clamp(), clearBtn, copyRevisionBtn (+18 more)
 
 ### Community 1 - "calibrate_features_v2.py"
 Cohesion: 0.17
 Nodes (21): best_threshold(), calibration_topics(), canonical_topic(), clamp(), coefficient_uniformity(), cross_validate(), features(), fold_map() (+13 more)
 
 ### Community 2 - "calibrate_formula.py"
-Cohesion: 0.35
-Nodes (11): best_threshold(), candidate_score(), clamp(), evaluate_frozen(), features(), load_rows(), Calibration-only formula selection with an explicit one-shot holdout gate.  `--s, select_and_freeze() (+3 more)
+Cohesion: 0.20
+Nodes (19): best_threshold(), candidate_score(), clamp(), evaluate_frozen(), features(), load_rows(), Calibration-only formula selection with an explicit one-shot holdout gate.  `--s, select_and_freeze() (+11 more)
 
 ### Community 3 - "classification_metrics"
 Cohesion: 0.19
-Nodes (20): build_dataset(), clamp(), classification_metrics(), evaluate(), evaluate(), fetch_human_samples(), Reproducible Indonesian pilot benchmark for Sinyal.AI.  Human samples: Indonesia, read_dataset() (+12 more)
+Nodes (17): build_dataset(), clamp(), classification_metrics(), evaluate(), evaluate(), fetch_human_samples(), Reproducible Indonesian pilot benchmark for Sinyal.AI.  Human samples: Indonesia, read_dataset() (+9 more)
 
 ### Community 4 - "build_v2_dataset.py"
-Cohesion: 0.16
-Nodes (21): build(), clean_text(), fetch_corpus(), generate_ai(), local_fallback(), Build a frozen multi-corpus Indonesian benchmark with auditable provenance., write_dataset(), collect_corpus() (+13 more)
+Cohesion: 0.23
+Nodes (14): collect_corpus(), main(), old_topics(), Collect and freeze 96 new human topics plus a paired split manifest for v2., split_for(), validate(), write_csv(), main() (+6 more)
 
 ### Community 5 - "Benchmark Indonesia Multi-Genre"
 Cohesion: 0.13
@@ -90,37 +83,29 @@ Cohesion: 0.47
 Nodes (8): canonical(), collect(), exclusions(), generate(), Build and score a frozen 12-pair external detector comparison corpus., read(), score_local(), write()
 
 ### Community 8 - "benchmark_expanded.py"
-Cohesion: 0.26
-Nodes (9): chunk_text(), extract_content(), Handler, llm_request(), Sinyal.AI local web server and context-aware LLM revision proxy.  Secrets are re, Split on paragraphs first, then sentences, while preserving all input text., revise_text(), words() (+1 more)
+Cohesion: 0.46
+Nodes (7): build(), clean_text(), fetch_corpus(), generate_ai(), local_fallback(), Build a frozen multi-corpus Indonesian benchmark with auditable provenance., write_dataset()
 
 ### Community 9 - "Benchmark Indonesia Sinyal.AI"
 Cohesion: 0.29
 Nodes (6): Batasan, Benchmark Indonesia Sinyal.AI, Hasil pilot saat ini, Interpretasi dan keputusan, Menjalankan ulang, Sumber dan lisensi
 
-### Community 10 - "benchmark_zerogpt.py"
-Cohesion: 0.53
-Nodes (5): detect(), main(), Run the frozen 24-text external corpus through ZeroGPT's public endpoint., read_csv(), write_csv()
-
-### Community 11 - "Sinyal.AI"
-Cohesion: 0.33
-Nodes (5): Catatan, Fitur, Konfigurasi, Menjalankan aplikasi, Sinyal.AI
-
 ## Knowledge Gaps
-- **42 isolated node(s):** `input`, `wordCount`, `charCount`, `analyzeBtn`, `clearBtn` (+37 more)
+- **32 isolated node(s):** `input`, `wordCount`, `charCount`, `analyzeBtn`, `clearBtn` (+27 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `classification_metrics()` connect `classification_metrics` to `calibrate_features_v2.py`, `calibrate_formula.py`, `build_v2_dataset.py`, `external_compare.py`, `benchmark_zerogpt.py`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
-- **Why does `score_text()` connect `classification_metrics` to `build_v2_dataset.py`, `external_compare.py`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **Why does `evaluate()` connect `classification_metrics` to `build_v2_dataset.py`, `generate_real_ai.py`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `classification_metrics()` connect `classification_metrics` to `benchmark_expanded.py`, `calibrate_features_v2.py`, `calibrate_formula.py`, `external_compare.py`?**
+  _High betweenness centrality (0.101) - this node is a cross-community bridge._
+- **Why does `score_text()` connect `classification_metrics` to `benchmark_expanded.py`, `calibrate_formula.py`, `external_compare.py`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `evaluate()` connect `classification_metrics` to `benchmark_expanded.py`, `generate_real_ai.py`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `input`, `wordCount`, `charCount` to the rest of the system?**
-  _42 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _32 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `app.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.07804878048780488 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11396011396011396 - nodes in this community are weakly interconnected._
 - **Should `Benchmark Indonesia Multi-Genre` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
